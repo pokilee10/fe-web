@@ -17,7 +17,7 @@ function ManagerHome() {
   const fetchInfo = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:9296/api/v1/orders/getTotalRevenue",
+        "https://backend.tuilakhanh.id.vn//api/v1/orders/getTotalRevenue",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -33,7 +33,7 @@ function ManagerHome() {
 
     try {
       const res = await axios.get(
-        "http://localhost:9296/api/v1/orders/getMonthlyRevenue",
+        "https://backend.tuilakhanh.id.vn//api/v1/orders/getMonthlyRevenue",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -56,7 +56,7 @@ function ManagerHome() {
 
     try {
       const res = await axios.get(
-        "http://localhost:9296/api/v1/orders/getAverageOrderValue",
+        "https://backend.tuilakhanh.id.vn//api/v1/orders/getAverageOrderValue",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -70,7 +70,7 @@ function ManagerHome() {
 
     try {
       const res = await axios.get(
-        "http://localhost:9296/api/v1/orders/getOrdersPerMonth",
+        "https://backend.tuilakhanh.id.vn//api/v1/orders/getOrdersPerMonth",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("accessToken")}`,

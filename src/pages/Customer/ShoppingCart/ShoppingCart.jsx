@@ -109,7 +109,7 @@ const ShoppingCart = () => {
     } else {
       try {
         const response = await axios.get(
-          "http://localhost:9296/api/payment/create_payment",
+          "https://backend.tuilakhanh.id.vn//api/payment/create_payment",
           {
             params: {
               amount: total,

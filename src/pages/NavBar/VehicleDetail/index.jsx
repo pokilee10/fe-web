@@ -11,7 +11,7 @@ function VehicleDetail() {
    const params = useParams();
    const [data, setData] = useState([]);
 
-   const url = "http://localhost:9296/api/v1/products/getCarById/" + params.id;
+   const url = "https://backend.tuilakhanh.id.vn//api/v1/products/getCarById/" + params.id;
    const fetchInfo = async () => {
       try {
          const res = await cdmApi.getCarById(params.id);

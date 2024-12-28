@@ -97,7 +97,7 @@ export default function Example() {
       setSnackbar({ children: "Add to cart successfully!", severity: "success" });
     }
 
-    const url = "http://localhost:9296/api/v1/products/getShopById/" + params.id;
+    const url = "https://backend.tuilakhanh.id.vn//api/v1/products/getShopById/" + params.id;
     const fetchInfo = async () => {
       try {
           const res = await cdmApi.getShopById(params.id);
