@@ -11,6 +11,7 @@ import Alert from "@mui/material/Alert";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import emptycart from "../../../assets/images/cartEmpty.gif";
+import { config } from "../../../misc/Constants";
 
 //new
 const ShoppingCart = () => {
@@ -109,7 +110,7 @@ const ShoppingCart = () => {
     } else {
       try {
         const response = await axios.get(
-          "https://backend.tuilakhanh.id.vn//api/payment/create_payment",
+          `${config.url.API_BASE_URL}/api/payment/create_payment`,
           {
             params: {
               amount: total,
