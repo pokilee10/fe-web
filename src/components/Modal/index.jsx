@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretDown, faClose } from "@fortawesome/free-solid-svg-icons";
+import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { Dialog, DialogTitle, DialogContent, DialogActions, TextField, Select, MenuItem, Checkbox, FormControlLabel, Button, FormControl, InputLabel } from "@mui/material";
 
 function Modal({ open, setOpenModal, data }) {

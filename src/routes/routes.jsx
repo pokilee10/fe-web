@@ -223,4 +223,4 @@ const managerRole = [
   },
 ];
 
-export { publicRoutes, privateRoutes, customerRole, staffRole, managerRole };
+export { publicRoutes,  customerRole, staffRole, managerRole };

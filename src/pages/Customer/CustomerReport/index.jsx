@@ -1,7 +1,6 @@
 import SideBar from "../../../layouts/components/sideBar/SideBar";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { cdmApi } from "../../../misc/cdmApi";
-import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";

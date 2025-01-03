@@ -2,7 +2,7 @@ import React from 'react'
 import ChatRoom from '../../../components/Chat/ChatRoom'
 import ManagerSideBar from '../../../layouts/components/ManagerSideBar'
 
-export const ManagerChat = () => {
+const ManagerChat = () => {
   
 
   return (
@@ -16,5 +16,3 @@ export const ManagerChat = () => {
     </div>
   )
 }
-
- export default ManagerChat
