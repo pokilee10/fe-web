@@ -93,6 +93,7 @@ function CustomerReport() {
     }
   };
 
+  // Modified handleRadioChange
   const handleRadioChange = (value) => {
     setSelectedOption(value);
     switch (value) {
@@ -148,7 +149,7 @@ function CustomerReport() {
           </p>
           <RadioGroup
             value={selectedOption}
-            onValueChange={handleRadioChange}
+            onValueChange={handleRadioChange} // Correctly pass the function reference
             className="mb-6"
           >
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -194,11 +195,16 @@ function CustomerReport() {
             Be as descriptive as possible so we can be sure to help you as best
             as we can.
           </p>
+          {title && (
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              {title}
+            </h2>
+          )}
           <Textarea
             placeholder="Write your thoughts here..."
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-            className="mb-4"
+            className="mb-4 p-4" // Added padding here
             rows={5}
           />
           <div className="flex items-center mb-4">
@@ -239,13 +245,17 @@ function CustomerReport() {
               </Label>
             </div>
             <div className="flex items-center">
-              <Checkbox className="text-blue-600 dark:text-blue-500" />
+              <Checkbox 
+              className="text-blue-600 dark:text-blue-500" 
+              />
               <Label className="ml-2 text-gray-700 dark:text-gray-300">
                 Text Message
               </Label>
             </div>
             <div className="flex items-center">
-              <Checkbox className="text-blue-600 dark:text-blue-500" />
+              <Checkbox 
+              className="text-blue-600 dark:text-blue-500" 
+              />
               <Label className="ml-2 text-gray-700 dark:text-gray-300">
                 Email Address
               </Label>
